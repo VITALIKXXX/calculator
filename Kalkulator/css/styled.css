@@ -27,6 +27,7 @@ body {
     min-height: 70vh;
 }
 
+
 .winik {
     grid-column: 1 / -1;
     background-color: #324f6d;
@@ -39,6 +40,7 @@ body {
     word-wrap: break-word;
     word-break: break-all;
     color: whitesmoke;
+    border-radius: 10px 10px 0 0;
 }
 
 .poprzednieDzialanie {
@@ -59,9 +61,9 @@ button {
     outline: none;
 }
 
-button:hover,
-button:focus {
-    background: rgba(36, 36, 35, .95);
+button:hover {
+    background: rgba(225, 228, 228, 0.95);
+    transition: all 0.3s;
 }
 
 .col-dwa {
