@@ -22,7 +22,7 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(5, 80px);
     grid-template-rows: minmax(120px, auto) repeat(5, 80px);
     min-height: 70vh;
 }
@@ -56,9 +56,10 @@ body {
 
 button {
     cursor: pointer;
-    border: 1px solid #747774;
+    border: 1px solid rgba(136, 14, 79, 0.1);
     background: #c4daf3;
     outline: none;
+    color: #000000;
 }
 
 button:hover {
@@ -67,7 +68,7 @@ button:hover {
 }
 
 .col-dwa {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 
 .row-dwa {
