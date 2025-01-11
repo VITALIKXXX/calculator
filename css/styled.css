@@ -22,8 +22,8 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(5, 80px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 80px);
     min-height: 70vh;
 }
 
@@ -69,8 +69,16 @@ button:hover {
 
 .col-dwa {
     grid-column: span 2;
+    background-color: #ced7e1;
 }
 
 .row-dwa {
     grid-row: span 2;
+    background-color: #324f6d;
+    color: white;
+}
+
+.operator {
+    background-color: #324f6d;
+    color: white;
 }
