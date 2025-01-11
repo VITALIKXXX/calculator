@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-    background: rgba(225, 228, 228, 0.95);
+    background: whitesmoke;
     transition: all 0.3s;
 }
 
