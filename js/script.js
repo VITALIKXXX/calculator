@@ -44,6 +44,9 @@ const oblicz = () => {
         case '√':
             dzialanie = Math.pow(poprzednie, 1 / aktualne)
             break;
+        case '^':
+            dzialanie = Math.pow(poprzednie, aktualne)
+            break;
         case '%':
             dzialanie = poprzednie / 100 * aktualne
             break;
