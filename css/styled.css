@@ -60,6 +60,7 @@ button {
     background: #c4daf3;
     outline: none;
     color: #000000;
+    font-size: 30px;
 }
 
 button:hover {
