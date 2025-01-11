@@ -78,7 +78,15 @@ button:hover {
     color: white;
 }
 
+.row-dwa:hover {
+    color: #000000;
+}
+
 .operator {
     background-color: #324f6d;
     color: white;
+}
+
+.operator:hover {
+    color: #000000;
 }
