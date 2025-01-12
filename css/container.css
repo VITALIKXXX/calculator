@@ -1,0 +1,78 @@
+.kalkulator {
+    margin: 25px auto;
+    width: 350px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 80px);
+    min-height: 70vh;
+    box-shadow: 9px 9px 20px #04155e;
+    padding: 20px;
+}
+
+
+.winik {
+    grid-column: 1 / -1;
+    background-color: #324f6d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: #ddd;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: whitesmoke;
+    border-radius: 10px 10px 0 0;
+}
+
+.poprzednieDzialanie {
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.aktualneDzialanie {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid rgba(136, 14, 79, 0.1);
+    background: #c4daf3;
+    outline: none;
+    color: #000000;
+    font-size: 30px;
+}
+
+button:hover {
+    background: whitesmoke;
+    transition: all 0.3s;
+}
+
+.col-dwa {
+    grid-column: span 2;
+    background-color: #ced7e1;
+}
+
+.row-dwa {
+    grid-row: span 2;
+    background-color: #324f6d;
+    color: white;
+}
+
+.row-dwa:hover {
+    color: #000000;
+}
+
+.operator {
+    background-color: #324f6d;
+    color: white;
+}
+
+.operator:hover {
+    color: #000000;
+}
