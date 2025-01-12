@@ -9,6 +9,7 @@
     grid-template-rows: minmax(120px, auto) repeat(6, 80px);
     min-height: 70vh;
     box-shadow: 9px 9px 20px #04155e;
+    border-radius: 20px;
     padding: 20px;
 }
 
