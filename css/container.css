@@ -1,4 +1,4 @@
-.kalkulator {
+.container {
     margin: 25px auto;
     width: 350px;
     height: auto;
@@ -14,7 +14,7 @@
 }
 
 
-.winik {
+.container__rezalts {
     grid-column: 1 / -1;
     background-color: #324f6d;
     display: flex;
@@ -29,13 +29,13 @@
     border-radius: 10px 10px 0 0;
 }
 
-.poprzednieDzialanie {
+.container__previousAction {
     font-size: 16px;
     font-weight: 400;
     color: whitesmoke;
 }
 
-.aktualneDzialanie {
+.container__currentAction {
     font-size: 30px;
     color: whitesmoke;
 }
@@ -69,11 +69,11 @@ button:hover {
     color: #000000;
 }
 
-.operator {
+.container__operator {
     background-color: #324f6d;
     color: white;
 }
 
-.operator:hover {
+.container__operator:hover {
     color: #000000;
 }

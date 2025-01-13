@@ -1,10 +1,10 @@
-const liczby = document.querySelectorAll('.liczba');
-const operatory = document.querySelectorAll('.operator');
-const wyczysc = document.querySelector('.wyczysc');
-const usun = document.querySelector('.usun');
-const rownosc = document.querySelector('.rownosc');
-const wynikPoprzednie = document.querySelector('.poprzednieDzialanie');
-const wynikAktualne = document.querySelector('.aktualneDzialanie');
+const number = document.querySelectorAll('.container__number');
+const operators = document.querySelectorAll('.container__operator');
+const clear = document.querySelector('.container__clear');
+const delet = document.querySelector('.container__delete');
+const equals = document.querySelector('.container__equals');
+const previousAction = document.querySelector('.container__previousAction');
+const currentAction = document.querySelector('.container__currentAction');
 
 
 let aktualneDzialanie = '';
@@ -36,7 +36,7 @@ const oblicz = () => {
             break;
         case '÷':
             if (aktualne === 0) {
-                wyczyscWynik()
+                clearWynik()
                 return
             }
             dzialanie = poprzednie / aktualne
@@ -64,9 +64,9 @@ const wybierzOperacje = (operator) => {
         return
     }
     if (poprzednieDzialanie !== '') {
-        const poprzednie = wynikPoprzednie.innerText
+        const poprzednie = previousAction.innerText
         if (aktualneDzialanie.toString() === '0' && poprzednie[poprzednie.length - 1] === '/') {
-            wyczyscWynik()
+            clearWynik()
             return
         }
         oblicz()
@@ -77,11 +77,11 @@ const wybierzOperacje = (operator) => {
 }
 
 const zaktualizujWynik = () => {
-    wynikAktualne.innerText = aktualneDzialanie
+    currentAction.innerText = aktualneDzialanie
     if (operacja != null) {
-        wynikPoprzednie.innerText = poprzednieDzialanie + operacja
+        previousAction.innerText = poprzednieDzialanie + operacja
     } else {
-        wynikPoprzednie.innerText = ''
+        previousAction.innerText = ''
     }
 }
 
@@ -92,41 +92,41 @@ const dodajLiczbe = (liczba) => {
     aktualneDzialanie = aktualneDzialanie.toString() + liczba.toString()
 }
 
-const usunLiczbe = () => {
+const deletLiczbe = () => {
     aktualneDzialanie = aktualneDzialanie.toString().slice(0, -1)
 }
 
-const wyczyscWynik = () => {
+const clearWynik = () => {
     aktualneDzialanie = ''
     poprzednieDzialanie = ''
     operacja = undefined
 }
 
-liczby.forEach((liczba) => {
+number.forEach((liczba) => {
     liczba.addEventListener('click', () => {
         dodajLiczbe(liczba.innerText)
         zaktualizujWynik()
     })
 })
 
-usun.addEventListener('click', () => {
-    usunLiczbe()
+delet.addEventListener('click', () => {
+    deletLiczbe()
     zaktualizujWynik()
 })
 
-operatory.forEach((operator) => {
+operators.forEach((operator) => {
     operator.addEventListener('click', () => {
         wybierzOperacje(operator.innerText)
         zaktualizujWynik()
     })
 })
 
-rownosc.addEventListener('click', () => {
+equals.addEventListener('click', () => {
     oblicz()
     zaktualizujWynik()
 })
 
-wyczysc.addEventListener('click', () => {
-    wyczyscWynik()
+clear.addEventListener('click', () => {
+    clearWynik()
     zaktualizujWynik()
 })
