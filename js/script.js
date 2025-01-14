@@ -50,6 +50,9 @@ const oblicz = () => {
         case '%':
             dzialanie = poprzednie / 100 * aktualne
             break;
+        case 'log':
+            dzialanie = Math.log(poprzednie) / Math.log(aktualne)
+            break;
         default:
             return
     }

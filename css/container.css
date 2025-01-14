@@ -5,8 +5,8 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(120px, auto) repeat(6, 80px);
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
     min-height: 70vh;
     box-shadow: 9px 9px 20px #04155e;
     border-radius: 20px;
@@ -40,6 +40,10 @@
     color: whitesmoke;
 }
 
+.container__delete {
+    background-color: #99b0cb;
+}
+
 button {
     cursor: pointer;
     border: 1px solid rgba(136, 14, 79, 0.1);
@@ -56,7 +60,7 @@ button:hover {
 
 .col-dwa {
     grid-column: span 2;
-    background-color: #ced7e1;
+    background-color: #99b0cb;
 }
 
 .row-dwa {
@@ -70,7 +74,7 @@ button:hover {
 }
 
 .container__operator {
-    background-color: #324f6d;
+    background-color: #99b0cb;
     color: white;
 }
 
