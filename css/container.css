@@ -9,7 +9,7 @@
 }
 
 .container {
-    background-color: #999fca;
+    background-color: #8a9ad6;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -38,7 +38,7 @@
 }
 
 .container__button {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     border: none;
     padding: 15px;
     font-size: 1.2rem;
@@ -57,10 +57,34 @@
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.col-dwa {
-    grid-column: span 2;
+.container__operator {
+    background-color: #4c5ea5;
+    color: whitesmoke;
 }
 
-.row-dwa {
+.container__operator:active {
+    color: black;
+}
+
+.container__operator:hover {
+    color: #333;
+}
+
+.container__delete {
+    background-color: #ff6f61;
+}
+
+.col-dwa {
+    grid-column: span 2;
+    background-color: #ff6f61;
+}
+
+.container__equals {
     grid-row: span 2;
+    background-color: #3b9a76;
+    color: #ffffff;
+}
+
+.container__equals:hover {
+    color: #333;
 }
