@@ -1,83 +1,66 @@
-.container {
-    margin: 25px auto;
-    width: 350px;
-    height: auto;
-    display: grid;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(5, 80px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
-    min-height: 70vh;
-    box-shadow: 9px 9px 20px #04155e;
-    border-radius: 20px;
-    padding: 20px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
 
 .container__rezalts {
-    grid-column: 1 / -1;
-    background-color: #324f6d;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
-    justify-content: space-between;
-    padding: 20px;
-    box-shadow: #ddd;
-    word-wrap: break-word;
-    word-break: break-all;
-    color: whitesmoke;
-    border-radius: 10px 10px 0 0;
-}
-
-.container__previousAction {
-    font-size: 16px;
-    font-weight: 400;
-    color: whitesmoke;
-}
-
-.container__currentAction {
-    font-size: 30px;
-    color: whitesmoke;
-}
-
-.container__delete {
-    background-color: #99b0cb;
+    color: #333;
+    height: 70px;
+    overflow: hidden;
+    grid-column: span 4;
 }
 
 button {
-    cursor: pointer;
-    border: 1px solid rgba(136, 14, 79, 0.1);
-    background: #c4daf3;
-    outline: none;
-    color: #000000;
-    font-size: 30px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background: whitesmoke;
-    transition: all 0.3s;
+    background-color: #e0e0e0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.col-dwa {
+button:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+button.col-dwa {
     grid-column: span 2;
-    background-color: #99b0cb;
 }
 
 .row-dwa {
     grid-row: span 2;
-    background-color: #324f6d;
-    color: white;
-}
-
-.row-dwa:hover {
-    color: #000000;
-}
-
-.container__operator {
-    background-color: #99b0cb;
-    color: white;
-}
-
-.container__operator:hover {
-    color: #000000;
 }
