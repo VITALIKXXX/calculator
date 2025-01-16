@@ -37,7 +37,7 @@
     grid-column: span 4;
 }
 
-button {
+.container__button {
     background-color: #f0f0f0;
     border: none;
     padding: 15px;
@@ -47,12 +47,12 @@ button {
     transition: all 0.2s ease;
 }
 
-button:hover {
+.container__button:hover {
     background-color: #e0e0e0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
+.container__button:active {
     transform: translateY(2px);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
