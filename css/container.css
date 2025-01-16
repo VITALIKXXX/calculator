@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: 'Arial', sans-serif;
     background-color: #f2f4f8;
     display: flex;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #d7dcf8;
+    background-color: #afb3b2;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -57,7 +57,7 @@ button:active {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-button.col-dwa {
+.col-dwa {
     grid-column: span 2;
 }
 
