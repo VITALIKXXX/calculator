@@ -13,7 +13,7 @@ let poprzednieDzialanie = '';
 let operacja = undefined;
 
 toggleButton.addEventListener('click', () => {
-    extraOperators.classList.toggle('extra__operators')
+    extraOperators.classList.toggle('active')
 });
 
 const oblicz = () => {
