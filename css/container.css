@@ -90,7 +90,7 @@
 }
 
 
-.extra__operators {
+.extra__operator {
     display: none;
 }
 
@@ -99,7 +99,7 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
-.active.extra__operators {
+.active.extra__operator {
     display: block;
 }
 
