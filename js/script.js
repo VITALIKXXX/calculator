@@ -5,18 +5,11 @@ const delet = document.querySelector('.container__delete');
 const equals = document.querySelector('.container__equals');
 const previousAction = document.querySelector('.container__previousAction');
 const currentAction = document.querySelector('.container__currentAction');
-const toggleButton = document.querySelector('.container__toggle');
-const container = document.querySelector('.container');
-
 
 let aktualneDzialanie = '';
 let poprzednieDzialanie = '';
 let operacja = undefined;
 
-toggleButton.addEventListener('click', () => {
-    container.classList.toggle('active');
-    toggleButton.innerText = container.classList.contains('active') ? 'Basic' : 'Advanced';
-});
 
 const oblicz = () => {
     let dzialanie
