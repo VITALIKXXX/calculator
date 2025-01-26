@@ -84,27 +84,3 @@
     background-color: #3b9a76;
     color: #ffffff;
 }
-
-.container__equals:hover {
-    color: #333;
-}
-
-
-.extra__operator {
-    display: none;
-}
-
-.active {
-    max-width: 500px;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.active.extra__operator {
-    display: block;
-}
-
-.container__toggle {
-    background-color: #4c5ea5;
-    color: white;
-    grid-column: span 4;
-}
