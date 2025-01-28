@@ -50,7 +50,7 @@
 
 .container__button:hover {
     color: #333;
-    background-color: #e0e0e0;
+    background-color: #e0e1e3a3;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
